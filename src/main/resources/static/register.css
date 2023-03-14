@@ -1,0 +1,99 @@
+/* Styles for the navigation bar */
+nav {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Styles for the main content */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+}
+
+/* Styles for the container */
+.container {
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 100%;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-bottom-color: #555;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}

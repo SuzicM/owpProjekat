@@ -1,0 +1,58 @@
+/* Styles for the navigation bar */
+nav {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Styles for the main content */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}

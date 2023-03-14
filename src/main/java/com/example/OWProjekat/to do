@@ -1,0 +1,23 @@
+HTML & CSS:
+
+napraviti href u home.html da vodi do odredjenog paragrafa u info.html
+dodati vesti na home page
+napraviti stranicu za vakcine, prikaz svih, kolicina dostupnih, ime vakcine je link koji vodi na stranicu info, pretragu
+promeniti info stranicu da sadrzi sledece: naziv, ime proizvodjaca, drzava proizvodjaca, kolicina
+napraviti profil korisnika, prikazati sve podatke osim lozinke i omoguciti izmenu podataka, pacijentu prikazati primljene vakcine i prijave za vakcinaciju
+napraviti stranicu gde doktor moze da vakcinise pacijenta ukoliko ima trazenih vakcina
+
+-----------------------------------------------------------------------------
+BACKEND:
+
+napraviti UserController
+napraviti user model
+napraviti model za vakcine i izmenu vakcina
+
+**Poceti od password encodera sledeci put**
+
+-----------------------------------------------------------------------------
+DONE:
+
+napraviti stranicu gde pacijent moze da zakaze vakcinaciju izborom datuma i vakcine
+
