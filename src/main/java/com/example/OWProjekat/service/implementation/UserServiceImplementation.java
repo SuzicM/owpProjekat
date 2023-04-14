@@ -7,8 +7,8 @@ import com.example.OWProjekat.model.entity.User;
 import com.example.OWProjekat.repository.UserRepository;
 import com.example.OWProjekat.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -31,8 +31,8 @@ public class UserServiceImplementation implements UserService {
     }
 
     @Override
-    public User findByUsername(String username) {
-        return userRepository.findByUsername(username);
+    public User findByJmbg(String jmbg) {
+        return userRepository.findByJmbg(jmbg);
     }
 
     @Override
@@ -56,7 +56,7 @@ public class UserServiceImplementation implements UserService {
     @Override
     public User updateUser(UpdateUserDTO updateUserDTO, String username) {
 
-        User updatedUser = userRepository.findByUsername(username);
+        User updatedUser = userRepository.findByJmbg(username);
 
         if (updateUserDTO.getFirstName() != null) { updatedUser.setFirstName(updateUserDTO.getFirstName());}
 

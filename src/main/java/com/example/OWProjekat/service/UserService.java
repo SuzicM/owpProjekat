@@ -12,7 +12,7 @@ public interface UserService {
 
     User findUserById(long id);
 
-    User findByUsername(String username);
+    User findByJmbg(String jmbg);
 
     User createUser(CreateUserDTO userDTO);
 
