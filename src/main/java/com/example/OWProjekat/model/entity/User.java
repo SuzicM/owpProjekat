@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 public class User {
 
 
@@ -34,9 +34,6 @@ public class User {
     private String password;
 
     @Column
-    private LocalDate dateOfBirth;
-
-    @Column
     private String jmbg;
 
     @Column
@@ -46,13 +43,8 @@ public class User {
     private String phone;
 
     @Column
-    private LocalDateTime dateOfRegistration;
-
-    @Column
     @Enumerated(EnumType.STRING)
     private Roles role;
 
-    @Column
-    private String vaccination;
 
 }

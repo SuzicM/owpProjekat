@@ -10,17 +10,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
 public class UserServiceImplementation implements UserService {
 
+    private final UserRepository userRepository;
     @Autowired
-    private UserRepository userRepository;
+    public UserServiceImplementation(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+
 
     @Override
     public List<User> findAllUsers() {
@@ -45,10 +48,8 @@ public class UserServiceImplementation implements UserService {
         user.setLastName(userDTO.getLastName());
         user.setEmail(userDTO.getEmail());
         user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
-        user.setDateOfBirth(userDTO.getDateOfBirth());
         user.setJmbg(userDTO.getJmbg());
         user.setPhone(userDTO.getPhone());
-        user.setDateOfRegistration(LocalDateTime.now());
         user.setRole(Roles.USER);
 
         userRepository.save(user);

@@ -1,5 +1,5 @@
 package com.example.OWProjekat.controller;
-
+/*
 import com.example.OWProjekat.model.dto.CreateUserDTO;
 import com.example.OWProjekat.model.entity.User;
 import com.example.OWProjekat.service.UserService;
@@ -26,15 +26,25 @@ public class HomeController {
         return "login";
     }
 
-    @PostMapping(value = "/register", consumes = "application/json")
-    public ResponseEntity<User> Register(@RequestBody CreateUserDTO userDTO) {
+    @PostMapping("/register")
+    public ResponseEntity<User> register(@RequestBody CreateUserDTO userDTO) {
         User user = userService.createUser(userDTO);
         return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
+
+    @GetMapping(value = "/register")
+    public String register(Model model) {
+        return "register";
+    }
+
 
     @GetMapping("/info")
     public String info(Model model) {return "info"; }
 
     @GetMapping("/appointment")
     public String appointment (Model model) {return  "appointment"; }
+
+    @GetMapping("/userProfile")
+    public String userProfile (Model model) {return "userProfile";}
 }
+*/
